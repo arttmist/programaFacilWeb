@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25;}
+ul{ list-style: none;}
+li{ font-size: 1.25;}
+
+.boton{
+    margin: 5px;
+    border: 1px solid rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    border-radius: 8px;
+    font-size: 0.9em;
+    padding: 10px 10px;
+}
+
+button{
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+    padding: 10px 10px;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1800px;
+    margin:auto
+}
+
+.color-acento{ color: blueviolet;}
+
+header{
+    background-color: whitesmoke;
+}
+
+header .logo{
+    margin: 0;
+    padding: 30px 25px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color:blueviolet;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+header a:hover{
+    color:blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(Imagenes/programacion-2-e1551291144973.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white;
+}
+
+#somos-profa{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(26, 25, 25);
+    color:white;
+    text-align: center;
+    padding: 200px 0px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    padding: 50;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(Imagenes/curso-logica-programacion-facialix.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(Imagenes/5-Programming-Languages-for-Beginners.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(Imagenes/chico-compu.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+    color: white;
+}
+
+#caracteristicas{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(Imagenes/lenguaje-de-programacion.jpg);
+    background-size: cover;
+    background-position: calc(90vw - 700px);
+}
+
+#caracteristicas .container{
+    text-align: initial;
+}
+
+#caracteristicas ul{
+    margin-left: 100px;
+}
+
+#unirme-ahora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    height: 80vh;
+}
+
+#unirme-ahora button{
+    font-size: 1.5em;
+}
+
+footer{
+    background-color: whitesmoke;
+}
+
+footer p{
+    height: 30px;
+    margin: 30px;
+}
+
+footer .container{
+    color:black;
+    text-align: center;
+}
+
+@media(min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+    #nuestros-programas .carta{
+        padding: 40px;
+    }
+}
+
+@media(min-width:1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
